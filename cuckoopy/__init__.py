@@ -16,7 +16,7 @@ def _parse_dt(x):
   return datetime.strptime(x, "%Y-%m-%d %H:%M:%S+00:00")
 
 
-def _invoke_cql2(zone, op=None, service=None, host=None, metric=None, args=None, query=None, latest_only=False):
+def query(zone, op=None, service=None, host=None, metric=None, args=None, query=None, latest_only=False):
   """ Usage:
 
         op      = sum/avg/min/max
